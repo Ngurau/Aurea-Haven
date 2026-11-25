@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F2E26">
+<title>AUREA HAVEN | Resort &amp; Spa</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="hin">
+    <button class="logo" onclick="go('home')" aria-label="AUREA HAVEN Home">
+      <img src="assets/logo-mark.png" alt="">
+      <span>AUREA HAVEN<small>RESORT &amp; SPA</small></span>
+    </button>
+    <nav id="mn" aria-label="Main"></nav>
+    <button class="btn" id="hbook" onclick="go('booking')">Book Now</button>
+    <button class="burger" id="bg" aria-label="Menu" aria-expanded="false" onclick="menu()">☰</button>
+  </div>
+</header>
+
+<main id="app">
+  <noscript>Please enable JavaScript to view the AUREA HAVEN website.</noscript>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fg4">
+      <div>
+        <img class="flogo" src="assets/logo-mark.png" alt="AUREA HAVEN">
+        <p>A peaceful island retreat where tropical nature, thoughtful hospitality, and understated luxury come together.</p>
+      </div>
+      <div><h4>Explore</h4><nav id="f1" aria-label="Explore links"></nav></div>
+      <div><h4>Discover</h4><nav id="f2" aria-label="Discover links"></nav></div>
+      <div><h4>Contact</h4><p>Resort &amp; Spa · Bali, Indonesia</p><a id="waBar" target="_blank" rel="noopener">WhatsApp</a></div>
+    </div>
+    <div class="fbot"><span>© <span id="yr"></span> AUREA HAVEN Resort &amp; Spa</span><span>Designed for moments that matter.</span></div>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="mt" onclick="if(event.target===this)closeM()">
+  <div class="mbox">
+    <button class="x" type="button" aria-label="Tutup gambar dan kembali ke galeri" title="Tutup (Esc)" onclick="closeM()">×</button>
+    <img id="mimg" src="" alt="">
+    <div class="mi"><h2 id="mt"></h2><p id="md"></p></div>
+  </div>
+</div>
+
+</body>
+</html>
