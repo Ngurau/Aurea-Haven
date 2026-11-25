@@ -138,7 +138,7 @@ home: () => `
   <button class="link" onclick="go('about')">Discover Our Story →</button></div>
   ${ph('garden','A Place to Slow Down','A tropical garden pathway inviting a peaceful moment.')}
 </div></section>
-<section class="sec iv"><div class="wrap">
+<section class="sec iv home-rooms"><div class="wrap">
   ${head('Stay Your Way','Your Private Retreat.','Thoughtfully designed rooms and villas for quiet mornings and memorable evenings.')}
   <div class="grid">${ROOMS.map(roomCard).join('')}</div>
   <p style="text-align:center;margin-top:30px"><button class="btn out" onclick="go('rooms')">View All Rooms &amp; Details</button></p>
